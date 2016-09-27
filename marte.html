@@ -17,18 +17,23 @@
     var peso_final;
     if (decision==1)
     {
+      var m = ("marte");
       peso_final = peso * (g_marte/g_tierra);
       peso_final= parseFloat(peso_final);
       alert ("Por favor lee tu peso en marte");
-      document.write ("<strong>Tu peso en marte es = </strong> " + peso_final+"Kg");
+      document.write ("<strong>Tu peso en " + m + " es = </strong> " + peso_final+" Kg");
     }
-
-    else
+    else if (decision == 2)
     {
+      var j = "Jupiter";
       peso_final = peso * (g_jupiter/g_tierra);
       peso_final= parseFloat(peso_final);
       alert ("Por favor lee tu peso en marte");
-      document.write ("<strong>Tu peso en marte es = </strong> " + peso_final+"Kg");
+      document.write ("<strong>Tu peso en" + j +"es = </strong> " + peso_final+" Kg");
+    }
+    else
+    {
+      alert ("No sea pendejo escriba uno o dos!");
     }
     </script>
   </body>
