@@ -15,22 +15,22 @@
     var g_jupiter = 24.8;
     var peso = parseFloat(usuario);
     var peso_final;
-    var planeta = ("Tierra");
+    var nombre_planeta = ("Tierra");
     if (decision==1)
     {
-      planeta = ("marte");
+      nombre_planeta = ("marte");
       peso_final = peso * (g_marte/g_tierra);
       peso_final= parseFloat(peso_final);
       alert ("Por favor lee tu peso en marte");
-      document.write ("<strong>Tu peso en " + planeta + " es = </strong> " + peso_final+" Kg");
+      document.write ("<strong>Tu peso en " + nombre_planeta + " es = </strong> " + peso_final+" Kg");
     }
     else if (decision == 2)
     {
-      Planeta = "Jupiter";
+      nombre_planeta = "Jupiter";
       peso_final = peso * (g_jupiter/g_tierra);
       peso_final= parseFloat(peso_final);
-      alert ("Por favor lee tu peso en marte");
-      document.write ("<strong>Tu peso en" + planeta +"es = </strong> " + peso_final+" Kg");
+      alert ("Por favor lee tu peso en Jupiter");
+      document.write ("<strong>Tu peso en  " + nombre_planeta +" es = </strong> " + peso_final+" Kg");
     }
     else
     {
