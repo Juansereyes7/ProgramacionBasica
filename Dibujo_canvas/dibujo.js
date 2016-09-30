@@ -1,4 +1,6 @@
 alert ("Funciona, dibujando con canvas");
+var texto = document.getElementById("texto_linea");
+var botoncito = document.getElementById("boton");
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
 lienzo.beginPath();
